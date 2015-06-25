@@ -1,0 +1,35 @@
+name: Hark
+description: "Listen to your favorite articles anytime, anywhere for free." 
+meta_description: "Listen to you favorite articles anytime, anywhere for free."
+
+aboutPage: true
+
+markdown: redcarpet
+highlighter: pygments
+
+paginate: 20
+baseurl: /
+domain_name: 'http://youhark.com'
+google_analytics: 'UA-31546982-1'
+disqus_shortname: 'harkwithus'
+
+# Details for the RSS feed generator
+url:            'http://www.youhark.com'
+author:         'Hark'
+authorTwitter:  'harkwithus'
+
+permalink:       /:year/:title/
+
+defaults:
+    -
+        scope:
+            path: "" # empty string for all files
+            type: pages
+        values:
+            layout: default
+    -
+        scope:
+            path: "" # empty string for all files
+            type: posts
+        values:
+            layout: post
